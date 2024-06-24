@@ -6,7 +6,7 @@ from crud_pat import read_pat, create_pat, update_pat, remove_pat, show_pat_coor
 
 if __name__ == '__main__':
     print('Logowanie')
-    print('Login: Nazwisko twórcy')
+    print('Login: Nazwisko twórcy (ALL CAPS)')
     print('Hasło: grupa wydzialowa')
     print('')
 
