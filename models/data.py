@@ -5,9 +5,9 @@ pharmacies: list[dict] = [
 ]
 
 patients: list[dict] = [
-    {'pat_name': 'Mariusz', 'pat_surname': 'Kowalski'},
-    {'pat_name': 'Maryla', 'pat_surname': 'Bonkowska'},
-    {'pat_name': 'Marian', 'pat_surname': 'Paluch'}
+    {'pat_name': 'Mariusz', 'pat_surname': 'Kowalski', 'pat_location': 'Lublin'},
+    {'pat_name': 'Maryla', 'pat_surname': 'Bonkowska', 'pat_location': 'Lublin'},
+    {'pat_name': 'Marian', 'pat_surname': 'Paluch', 'pat_location': 'Lublin'},
 ]
 
 drugs: list[dict] = [

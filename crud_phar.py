@@ -6,7 +6,6 @@ def get_coords(phar_location):
     adres_url = f'https://pl.wikipedia.org/wiki/{phar_location}'
     response = requests.get(adres_url)
     response_html = BeautifulSoup(response.text, 'html.parser')
-    # print  (response_html)
     latitude = float(response_html.select('.latitude')[1].text.replace(',', '.'))
     longitude = float(response_html.select('.longitude')[1].text.replace(',', '.'))
     print([latitude, longitude])
