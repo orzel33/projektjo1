@@ -51,3 +51,14 @@ def show_phar_coords(pharmacies: list[dict]) -> None:
         get_coords(phar_location)
     else:
         print("Podano niepoprawny numer apteki.")
+
+
+def showcase_workers(workers):
+    pharm_name = input('Pracowników jakiej apteki chcesz zobaczyc? Podaj jej nazwę: ')
+    worker_pharmacy = [worker for worker in workers if
+                       worker['worker_pharmacy'] == pharm_name]
+    if not worker_pharmacy:
+        print('Ta apteka nie ma żadnych pracowników, którzy są zarejstrowani: ')
+    else:
+        for worker in worker_pharmacy:
+            print(f" Imie i nazwisko: {worker['worker_name']}   Posada:{worker['worker_occupation']}")
