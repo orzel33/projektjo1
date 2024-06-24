@@ -14,7 +14,7 @@ def get_coords(phar_location):
 
 def read_phar(pharmacies) -> None:
     for index, pharmacy in enumerate(pharmacies, start=1):
-        print(f"{index}. {pharmacy['phar_name']}, {pharmacy['phar_location']}")
+        print(f"{index}. {pharmacy['phar_name']} {pharmacy['phar_location']}")
         print('________________________________________________________________________________')
 
 

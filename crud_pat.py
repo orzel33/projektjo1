@@ -14,7 +14,7 @@ def get_coords(pat_location):
 
 def read_pat(patients) -> None:
     for index, patient in enumerate(patients, start=1):
-        print(f"{index}. {patient['pat_name']},{patient['pat_surname']}, {patient['pat_location']}")
+        print(f"{index}. {patient['pat_name']} {patient['pat_surname']} {patient['pat_location']}")
         print('________________________________________________________________________________')
 
 

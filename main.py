@@ -7,7 +7,7 @@ from crud_pat import read_pat, create_pat, update_pat, remove_pat, show_pat_coor
 if __name__ == '__main__':
     print('Logowanie')
     print('Login: Nazwisko twórcy')
-    print('Haslo: grupa wydzialowa')
+    print('Hasło: grupa wydzialowa')
     print('')
 
     Login = "ORŁOWSKI"
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     if Login == login and Haslo == haslo:
         print("Sukces")
     else:
-        print("Blędny login lub haslo")
+        print("Błędny login lub haslo")
         login: str = input("Podaj login:")
         haslo: str = input("Podaj haslo:")
 
