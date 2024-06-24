@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_coords(location):
-    adres_url = f'https://pl.wikipedia.org/wiki/{location}'
+def get_coords(phar_location):
+    adres_url = f'https://pl.wikipedia.org/wiki/{phar_location}'
     response = requests.get(adres_url)
     response_html = BeautifulSoup(response.text, 'html.parser')
     # print  (response_html)
