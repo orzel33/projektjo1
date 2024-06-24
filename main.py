@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
             elif sub_menu2_option == '3':
                 remove_drug(drugs)
-                print('Usunięto. ')
+                print('Usunięto.')
 
             elif sub_menu2_option == '4':
                 show_drug_coords(drugs)
