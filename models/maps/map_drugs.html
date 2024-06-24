@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f01e4072a352f2f53a1f207b85dbffc2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f01e4072a352f2f53a1f207b85dbffc2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f01e4072a352f2f53a1f207b85dbffc2 = L.map(
+                "map_f01e4072a352f2f53a1f207b85dbffc2",
+                {
+                    center: [52.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_125c89257dd4e5be8ee1389aa1b807e8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_125c89257dd4e5be8ee1389aa1b807e8.addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var marker_e1e12a95568a5f8d6b03bf587aa7f110 = L.marker(
+                [52.232222, 21.008333],
+                {}
+            ).addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var icon_78a8255aa25b6b8fd3e38580a2b6017c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e1e12a95568a5f8d6b03bf587aa7f110.setIcon(icon_78a8255aa25b6b8fd3e38580a2b6017c);
+        
+    
+        var popup_07a80f1e80fcea2381d2febd0f2c2ee7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3c6d17b66b4ee7a19f103406018681a = $(`<div id="html_c3c6d17b66b4ee7a19f103406018681a" style="width: 100.0%; height: 100.0%;">Apap, Warszawa</div>`)[0];
+                popup_07a80f1e80fcea2381d2febd0f2c2ee7.setContent(html_c3c6d17b66b4ee7a19f103406018681a);
+            
+        
+
+        marker_e1e12a95568a5f8d6b03bf587aa7f110.bindPopup(popup_07a80f1e80fcea2381d2febd0f2c2ee7)
+        ;
+
+        
+    
+    
+            var marker_f0f1a6148ef4275ec2e373e7245597b4 = L.marker(
+                [51.205278, 16.156389],
+                {}
+            ).addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var icon_f7234577766ce951686a538de703cc03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f0f1a6148ef4275ec2e373e7245597b4.setIcon(icon_f7234577766ce951686a538de703cc03);
+        
+    
+        var popup_2de5af35340ac214625d2efb6eca5e78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c953deaa31ab021f926b37e1709312fe = $(`<div id="html_c953deaa31ab021f926b37e1709312fe" style="width: 100.0%; height: 100.0%;">Paracetamol, Legnica</div>`)[0];
+                popup_2de5af35340ac214625d2efb6eca5e78.setContent(html_c953deaa31ab021f926b37e1709312fe);
+            
+        
+
+        marker_f0f1a6148ef4275ec2e373e7245597b4.bindPopup(popup_2de5af35340ac214625d2efb6eca5e78)
+        ;
+
+        
+    
+    
+            var marker_9c526eb055dd334d3f947c20f308affa = L.marker(
+                [51.25, 22.566667],
+                {}
+            ).addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var icon_585553075778266c89210b045cc3e54a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9c526eb055dd334d3f947c20f308affa.setIcon(icon_585553075778266c89210b045cc3e54a);
+        
+    
+        var popup_f083579f9c586d53f97e62a3e73daa67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9fa109e5c32ac3f2ef370064473fcf9 = $(`<div id="html_b9fa109e5c32ac3f2ef370064473fcf9" style="width: 100.0%; height: 100.0%;">Rutinoscorbin, Lublin</div>`)[0];
+                popup_f083579f9c586d53f97e62a3e73daa67.setContent(html_b9fa109e5c32ac3f2ef370064473fcf9);
+            
+        
+
+        marker_9c526eb055dd334d3f947c20f308affa.bindPopup(popup_f083579f9c586d53f97e62a3e73daa67)
+        ;
+
+        
+    
+    
+            var marker_700d85eb50cc962270b809883b1ade44 = L.marker(
+                [53.022222, 18.611111],
+                {}
+            ).addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var icon_3d329cea79b8a22c0b06e191c3c3a438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_700d85eb50cc962270b809883b1ade44.setIcon(icon_3d329cea79b8a22c0b06e191c3c3a438);
+        
+    
+        var popup_c0b26d6fe7a1f57f287f15ebf1d1b86b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_807cad24adf6978a36846e8a5c64a0cb = $(`<div id="html_807cad24adf6978a36846e8a5c64a0cb" style="width: 100.0%; height: 100.0%;">Renigast MAX, Toruń</div>`)[0];
+                popup_c0b26d6fe7a1f57f287f15ebf1d1b86b.setContent(html_807cad24adf6978a36846e8a5c64a0cb);
+            
+        
+
+        marker_700d85eb50cc962270b809883b1ade44.bindPopup(popup_c0b26d6fe7a1f57f287f15ebf1d1b86b)
+        ;
+
+        
+    
+    
+            var marker_c1757187579441221fed2dd0f107dcf3 = L.marker(
+                [51.132222, 23.477778],
+                {}
+            ).addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var icon_55566437a7faca201df03d9667781336 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c1757187579441221fed2dd0f107dcf3.setIcon(icon_55566437a7faca201df03d9667781336);
+        
+    
+        var popup_d3e1ee217eecd5c9b85a3c4ca4e9a46f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c4d7e62f0ab6b7658f4638ab138d0a8 = $(`<div id="html_9c4d7e62f0ab6b7658f4638ab138d0a8" style="width: 100.0%; height: 100.0%;">Altacet-ICE, Chełm</div>`)[0];
+                popup_d3e1ee217eecd5c9b85a3c4ca4e9a46f.setContent(html_9c4d7e62f0ab6b7658f4638ab138d0a8);
+            
+        
+
+        marker_c1757187579441221fed2dd0f107dcf3.bindPopup(popup_d3e1ee217eecd5c9b85a3c4ca4e9a46f)
+        ;
+
+        
+    
+    
+            var marker_1cf4735b70449e6461c6c7a64e78e3f1 = L.marker(
+                [50.039167, 19.220833],
+                {}
+            ).addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var icon_4410c281fb6892bfdd8896b7db87a526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1cf4735b70449e6461c6c7a64e78e3f1.setIcon(icon_4410c281fb6892bfdd8896b7db87a526);
+        
+    
+        var popup_3e820a146076207afd459bfd691e729f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0daa526e17a63817699c5088c045881 = $(`<div id="html_f0daa526e17a63817699c5088c045881" style="width: 100.0%; height: 100.0%;">Jaranie, Oświęcim</div>`)[0];
+                popup_3e820a146076207afd459bfd691e729f.setContent(html_f0daa526e17a63817699c5088c045881);
+            
+        
+
+        marker_1cf4735b70449e6461c6c7a64e78e3f1.bindPopup(popup_3e820a146076207afd459bfd691e729f)
+        ;
+
+        
+    
+    
+            var marker_638bcfcadcfa68620bfd55cc1f5b567e = L.marker(
+                [52.408333, 16.934167],
+                {}
+            ).addTo(map_f01e4072a352f2f53a1f207b85dbffc2);
+        
+    
+            var icon_b92edf41833f47cced4c12c031aab13f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_638bcfcadcfa68620bfd55cc1f5b567e.setIcon(icon_b92edf41833f47cced4c12c031aab13f);
+        
+    
+        var popup_ae5400957f5e4de9a4c1f9188ee4cf6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c69d2dd12439e25c16a7d4cc5d72b117 = $(`<div id="html_c69d2dd12439e25c16a7d4cc5d72b117" style="width: 100.0%; height: 100.0%;">Klefa, Poznań</div>`)[0];
+                popup_ae5400957f5e4de9a4c1f9188ee4cf6c.setContent(html_c69d2dd12439e25c16a7d4cc5d72b117);
+            
+        
+
+        marker_638bcfcadcfa68620bfd55cc1f5b567e.bindPopup(popup_ae5400957f5e4de9a4c1f9188ee4cf6c)
+        ;
+
+        
+    
+</script>
+</html>

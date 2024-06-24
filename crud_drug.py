@@ -1,3 +1,4 @@
+import folium
 import requests
 from bs4 import BeautifulSoup
 
@@ -51,3 +52,22 @@ def show_drug_coords(drugs: list[dict]) -> None:
         get_coords(drug_location)
     else:
         print("Podano niepoprawny numer leku.")
+
+def drug_map(drugs):
+    map = folium.Map(location=[52, 20], zoom_start=7)
+    for drug in drugs:
+        drug_name = drug['drug_name']
+        drug_location = drug['drug_location']
+        url = f"https://pl.wikipedia.org/wiki/{drug_location}"
+        response = requests.get(url)
+        response_html = BeautifulSoup(response.text, 'html.parser')
+        latitude = float(response_html.select('.latitude')[1].text.replace(',', '.'))
+        longitude = float(response_html.select('.longitude')[1].text.replace(',', '.'))
+        print(
+            f"Lekarstwo: {drug_name}, Lokalizacja: {drug_location}, Szerokość Geograficzna: {latitude}, Długość Geograficzna: {longitude}")
+        folium.Marker(
+            location=[latitude, longitude],
+            popup=f"{drug_name},\n{drug_location}",
+            icon=folium.Icon(color='purple')
+        ).add_to(map)
+    map.save('models/maps/map_drugs.html')
