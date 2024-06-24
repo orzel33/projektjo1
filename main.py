@@ -1,13 +1,13 @@
-from models.data import pharmacies, drugs, patients
-from crud_phar import read_phar, create_phar, update_phar, remove_phar, show_phar_coords
+from models.data import pharmacies, drugs, patients, workers
+from crud_phar import read_phar, create_phar, update_phar, remove_phar, show_phar_coords, showcase_workers
 from crud_drug import read_drug, remove_drug, update_drug, create_drug, show_drug_coords
-from crud_pat import read_pat, create_pat, update_pat, remove_pat, show_pat_coords
+from crud_pat import read_pat, create_pat, update_pat, remove_pat, show_pat_coords, pat_showcase
 
 
 if __name__ == '__main__':
     print('Logowanie')
-    print('Login: Nazwisko twórcy')
-    print('Haslo: grupa wydzialowa')
+    print('Login: Nazwisko twórcy (ALL CAPS)')
+    print('Hasło: grupa wydzialowa')
     print('')
 
     Login = "ORŁOWSKI"
@@ -17,7 +17,7 @@ if __name__ == '__main__':
     if Login == login and Haslo == haslo:
         print("Sukces")
     else:
-        print("Blędny login lub haslo")
+        print("Błędny login lub haslo")
         login: str = input("Podaj login:")
         haslo: str = input("Podaj haslo:")
 
@@ -41,6 +41,8 @@ if __name__ == '__main__':
             print('2. Dodaj nową aptekę do listy')
             print('3. Usuń aptekę z listy')
             print('4. Sprawdź współrzędne apteki')
+            print('5. Pokaż listę pacjentów zarejestrowanych w aptece: ')
+            print('6. Pokaż listę pracowników aptece: ')
             sub_menu1_option = input('Wybierz dostępną funkcję z menu: ')
 
             if sub_menu1_option == '0':
@@ -60,6 +62,12 @@ if __name__ == '__main__':
 
             elif sub_menu1_option == '4':
                 show_phar_coords(pharmacies)
+
+            elif sub_menu1_option == '5':
+                pat_showcase(patients)
+
+            elif sub_menu1_option == '6':
+                showcase_workers(workers)
 
         elif menu_option == '2':
             print('Lista dostępnych leków, i miast gdzie są dostępne wygląda następująco:')
