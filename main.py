@@ -2,6 +2,22 @@ from models.data import pharmacies
 from crud_phar import read_phar, create_phar, update_phar, remove_phar, show_phar_coords
 
 if __name__ == '__main__':
+    print('Logowanie')
+    print('Login: Nazwisko twórcy')
+    print('Haslo: grupa wydzialowa')
+    print('')
+
+    Login = "ORŁOWSKI"
+    Haslo = "WIG23GW3S0"
+    login: str = input("Podaj login:")
+    haslo: str = input("Podaj haslo:")
+    if Login == login and Haslo == haslo:
+        print("Sukces")
+    else:
+        print("Blędny login lub haslo")
+        login: str = input("Podaj login:")
+        haslo: str = input("Podaj haslo:")
+
     print('Witaj użytkowniku!')
     while True:
         print('Menu:')
