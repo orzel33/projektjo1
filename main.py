@@ -1,6 +1,8 @@
-from models.data import pharmacies, drugs
+from models.data import pharmacies, drugs, patients
 from crud_phar import read_phar, create_phar, update_phar, remove_phar, show_phar_coords
 from crud_drug import read_drug, remove_drug, update_drug, create_drug, show_drug_coords
+from crud_pat import read_pat, create_pat, update_pat, remove_pat, show_pat_coords
+
 
 if __name__ == '__main__':
     print('Logowanie')
@@ -86,3 +88,31 @@ if __name__ == '__main__':
 
             elif sub_menu2_option == '4':
                 show_drug_coords(drugs)
+
+        elif menu_option == '3':
+            print('Lista klientów wygląda następująco:')
+            read_pat(patients)
+            print('0. Cofnij')
+            print('1. Edytuj dane pacjenta')
+            print('2. Dodaj nowego pacjenta')
+            print('3. Usuń pacjenta z listy')
+            print('4. Sprawdź współrzędne miasta, gdzie przyjmowany jest pacjent: ')
+            sub_menu3_option = input('Wybierz dostępną funkcję z menu: ')
+
+            if sub_menu3_option == '0':
+                continue
+
+            elif sub_menu3_option == '1':
+                update_pat(patients)
+                print('Edytowano')
+
+            elif sub_menu3_option == '2':
+                create_pat(patients)
+                print('Dodano nową aptekę')
+
+            elif sub_menu3_option == '3':
+                remove_pat(patients)
+                print('Usunięto. ')
+
+            elif sub_menu3_option == '4':
+                show_pat_coords(patients)
