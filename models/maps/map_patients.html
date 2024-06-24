@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05412a1ddaf1f0264380566a3db87bb3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05412a1ddaf1f0264380566a3db87bb3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05412a1ddaf1f0264380566a3db87bb3 = L.map(
+                "map_05412a1ddaf1f0264380566a3db87bb3",
+                {
+                    center: [52.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69fd75f2c47667dd8b1c8a8f95d3da18 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_69fd75f2c47667dd8b1c8a8f95d3da18.addTo(map_05412a1ddaf1f0264380566a3db87bb3);
+        
+    
+            var marker_92e98c267d592527cdee15a4259f7ed5 = L.marker(
+                [52.232222, 21.008333],
+                {}
+            ).addTo(map_05412a1ddaf1f0264380566a3db87bb3);
+        
+    
+            var icon_912f5ed24d6a54aaeadbb142030ffe7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_92e98c267d592527cdee15a4259f7ed5.setIcon(icon_912f5ed24d6a54aaeadbb142030ffe7a);
+        
+    
+        var popup_d126b2f2fc28821d4b090dc5934b2e18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78d42fbbe1be2c701482babf6a2febe0 = $(`<div id="html_78d42fbbe1be2c701482babf6a2febe0" style="width: 100.0%; height: 100.0%;">Mariusz Kowalski, Warszawa</div>`)[0];
+                popup_d126b2f2fc28821d4b090dc5934b2e18.setContent(html_78d42fbbe1be2c701482babf6a2febe0);
+            
+        
+
+        marker_92e98c267d592527cdee15a4259f7ed5.bindPopup(popup_d126b2f2fc28821d4b090dc5934b2e18)
+        ;
+
+        
+    
+    
+            var marker_7058881a7ac1c13fc504ce4a7b6e46b2 = L.marker(
+                [51.25, 22.566667],
+                {}
+            ).addTo(map_05412a1ddaf1f0264380566a3db87bb3);
+        
+    
+            var icon_dfffa6f520e69f986c911350576ab1da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7058881a7ac1c13fc504ce4a7b6e46b2.setIcon(icon_dfffa6f520e69f986c911350576ab1da);
+        
+    
+        var popup_c492bf5b40026dfb7342d83efedeac74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a18f1a5a9e10fa463f6e722b054f0e = $(`<div id="html_e4a18f1a5a9e10fa463f6e722b054f0e" style="width: 100.0%; height: 100.0%;">Maryla Bonkowska, Lublin</div>`)[0];
+                popup_c492bf5b40026dfb7342d83efedeac74.setContent(html_e4a18f1a5a9e10fa463f6e722b054f0e);
+            
+        
+
+        marker_7058881a7ac1c13fc504ce4a7b6e46b2.bindPopup(popup_c492bf5b40026dfb7342d83efedeac74)
+        ;
+
+        
+    
+    
+            var marker_7e8f75c1803b23142dc14d28616512c2 = L.marker(
+                [52.232222, 21.008333],
+                {}
+            ).addTo(map_05412a1ddaf1f0264380566a3db87bb3);
+        
+    
+            var icon_86d5980ed85dfd0948b1f694d81ce2cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7e8f75c1803b23142dc14d28616512c2.setIcon(icon_86d5980ed85dfd0948b1f694d81ce2cb);
+        
+    
+        var popup_ce676903da897b7dbf3dcf8535e68854 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a45dc3ab9989e4acfe08879361fed45 = $(`<div id="html_4a45dc3ab9989e4acfe08879361fed45" style="width: 100.0%; height: 100.0%;">Marian Paluch, Warszawa</div>`)[0];
+                popup_ce676903da897b7dbf3dcf8535e68854.setContent(html_4a45dc3ab9989e4acfe08879361fed45);
+            
+        
+
+        marker_7e8f75c1803b23142dc14d28616512c2.bindPopup(popup_ce676903da897b7dbf3dcf8535e68854)
+        ;
+
+        
+    
+</script>
+</html>

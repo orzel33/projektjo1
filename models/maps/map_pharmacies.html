@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9042534a7ca120d6b2456dd213956d29 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9042534a7ca120d6b2456dd213956d29" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9042534a7ca120d6b2456dd213956d29 = L.map(
+                "map_9042534a7ca120d6b2456dd213956d29",
+                {
+                    center: [52.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_12baf3d2253833e2c35ee74d017d2d9c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_12baf3d2253833e2c35ee74d017d2d9c.addTo(map_9042534a7ca120d6b2456dd213956d29);
+        
+    
+            var marker_9e69397673604d68695e258a25966a90 = L.marker(
+                [52.232222, 21.008333],
+                {}
+            ).addTo(map_9042534a7ca120d6b2456dd213956d29);
+        
+    
+            var icon_503fbdc34f312cd9bee3b399f9b3809c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e69397673604d68695e258a25966a90.setIcon(icon_503fbdc34f312cd9bee3b399f9b3809c);
+        
+    
+        var popup_245db7e64442032fefe102eeeeffc029 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db1e7b551977ddbf9e5822f5ce4963bf = $(`<div id="html_db1e7b551977ddbf9e5822f5ce4963bf" style="width: 100.0%; height: 100.0%;">Apteka Dr Max, Warszawa</div>`)[0];
+                popup_245db7e64442032fefe102eeeeffc029.setContent(html_db1e7b551977ddbf9e5822f5ce4963bf);
+            
+        
+
+        marker_9e69397673604d68695e258a25966a90.bindPopup(popup_245db7e64442032fefe102eeeeffc029)
+        ;
+
+        
+    
+    
+            var marker_9687c4ec387ceba295937b009f3637dc = L.marker(
+                [51.205278, 16.156389],
+                {}
+            ).addTo(map_9042534a7ca120d6b2456dd213956d29);
+        
+    
+            var icon_a15940f7f429c84969885d6a3d834312 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9687c4ec387ceba295937b009f3637dc.setIcon(icon_a15940f7f429c84969885d6a3d834312);
+        
+    
+        var popup_b2e8ae2eca27de04c35217d61b5b68b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06bc75dada5d3bb82c16274c06a22a5b = $(`<div id="html_06bc75dada5d3bb82c16274c06a22a5b" style="width: 100.0%; height: 100.0%;">Super Apteka, Legnica</div>`)[0];
+                popup_b2e8ae2eca27de04c35217d61b5b68b8.setContent(html_06bc75dada5d3bb82c16274c06a22a5b);
+            
+        
+
+        marker_9687c4ec387ceba295937b009f3637dc.bindPopup(popup_b2e8ae2eca27de04c35217d61b5b68b8)
+        ;
+
+        
+    
+    
+            var marker_7566ae7af4c49d771083631bb9cb8af4 = L.marker(
+                [51.25, 22.566667],
+                {}
+            ).addTo(map_9042534a7ca120d6b2456dd213956d29);
+        
+    
+            var icon_0280ba8d1c4c4bd5f8960d04d967d132 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7566ae7af4c49d771083631bb9cb8af4.setIcon(icon_0280ba8d1c4c4bd5f8960d04d967d132);
+        
+    
+        var popup_dea730af7a1b876e0b7f5a17ab3171a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38e1433be9f896922e86ede84eacecb3 = $(`<div id="html_38e1433be9f896922e86ede84eacecb3" style="width: 100.0%; height: 100.0%;">Apteka Kartezjusza, Lublin</div>`)[0];
+                popup_dea730af7a1b876e0b7f5a17ab3171a6.setContent(html_38e1433be9f896922e86ede84eacecb3);
+            
+        
+
+        marker_7566ae7af4c49d771083631bb9cb8af4.bindPopup(popup_dea730af7a1b876e0b7f5a17ab3171a6)
+        ;
+
+        
+    
+    
+            var marker_2c0616d8269751849593ab5c94216b10 = L.marker(
+                [53.022222, 18.611111],
+                {}
+            ).addTo(map_9042534a7ca120d6b2456dd213956d29);
+        
+    
+            var icon_43d1f9dc9fb6c90f3079dd11d5e9f85d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c0616d8269751849593ab5c94216b10.setIcon(icon_43d1f9dc9fb6c90f3079dd11d5e9f85d);
+        
+    
+        var popup_9119014feb7fd7e706d7b2503732b7f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d86c5fa06956421bc4bc6db051151eca = $(`<div id="html_d86c5fa06956421bc4bc6db051151eca" style="width: 100.0%; height: 100.0%;">Apteka Barnabas, Toruń</div>`)[0];
+                popup_9119014feb7fd7e706d7b2503732b7f1.setContent(html_d86c5fa06956421bc4bc6db051151eca);
+            
+        
+
+        marker_2c0616d8269751849593ab5c94216b10.bindPopup(popup_9119014feb7fd7e706d7b2503732b7f1)
+        ;
+
+        
+    
+    
+            var marker_ef3d43391b11ea2896a1c1098c0ca17b = L.marker(
+                [51.132222, 23.477778],
+                {}
+            ).addTo(map_9042534a7ca120d6b2456dd213956d29);
+        
+    
+            var icon_40f5b3428c21041c86405ff1896e61bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef3d43391b11ea2896a1c1098c0ca17b.setIcon(icon_40f5b3428c21041c86405ff1896e61bd);
+        
+    
+        var popup_e56135662eb5a3d3ff87b29a3cb09952 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2f5282a1335620e3e691ce642906a8f = $(`<div id="html_f2f5282a1335620e3e691ce642906a8f" style="width: 100.0%; height: 100.0%;">Apteka Picipolo, Chełm</div>`)[0];
+                popup_e56135662eb5a3d3ff87b29a3cb09952.setContent(html_f2f5282a1335620e3e691ce642906a8f);
+            
+        
+
+        marker_ef3d43391b11ea2896a1c1098c0ca17b.bindPopup(popup_e56135662eb5a3d3ff87b29a3cb09952)
+        ;
+
+        
+    
+</script>
+</html>

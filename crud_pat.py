@@ -1,3 +1,4 @@
+import folium
 import requests
 from bs4 import BeautifulSoup
 
@@ -75,3 +76,24 @@ def pat_showcase(patients):
     else:
         for patient in pat_phar:
             print(f" {patient['pat_name']} {patient['pat_surname']}")
+
+
+def pat_map(patients):
+    map = folium.Map(location=[52, 20], zoom_start=7)
+    for patient in patients:
+        pat_name = patient['pat_name']
+        pat_surname = patient['pat_surname']
+        pat_location = patient['pat_location']
+        url = f"https://pl.wikipedia.org/wiki/{pat_location}"
+        response = requests.get(url)
+        response_html = BeautifulSoup(response.text, 'html.parser')
+        latitude = float(response_html.select('.latitude')[1].text.replace(',', '.'))
+        longitude = float(response_html.select('.longitude')[1].text.replace(',', '.'))
+        print(
+            f"Pacjent: {pat_name} {pat_surname}, Lokalizacja: {pat_location}, Szerokość Geograficzna: {latitude}, Długość Geograficzna: {longitude}")
+        folium.Marker(
+            location=[latitude, longitude],
+            popup=f"{pat_name} {pat_surname},\n{pat_location}",
+            icon=folium.Icon(color='green')
+        ).add_to(map)
+    map.save('models/maps/map_patients.html')

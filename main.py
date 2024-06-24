@@ -1,7 +1,7 @@
 from models.data import pharmacies, drugs, patients, workers
-from crud_phar import read_phar, create_phar, update_phar, remove_phar, show_phar_coords, showcase_workers
-from crud_drug import read_drug, remove_drug, update_drug, create_drug, show_drug_coords
-from crud_pat import read_pat, create_pat, update_pat, remove_pat, show_pat_coords, pat_showcase
+from crud_phar import read_phar, create_phar, update_phar, remove_phar, show_phar_coords, showcase_workers, phar_map
+from crud_drug import read_drug, remove_drug, update_drug, create_drug, show_drug_coords, drug_map
+from crud_pat import read_pat, create_pat, update_pat, remove_pat, show_pat_coords, pat_showcase, pat_map
 
 
 if __name__ == '__main__':
@@ -41,8 +41,9 @@ if __name__ == '__main__':
             print('2. Dodaj nową aptekę do listy')
             print('3. Usuń aptekę z listy')
             print('4. Sprawdź współrzędne apteki')
-            print('5. Pokaż listę pacjentów zarejestrowanych w aptece: ')
-            print('6. Pokaż listę pracowników aptece: ')
+            print('5. Pokaż listę pacjentów zarejestrowanych w aptece ')
+            print('6. Pokaż listę pracowników aptece ')
+            print('7. Pokaż apteki na mapie ')
             sub_menu1_option = input('Wybierz dostępną funkcję z menu: ')
 
             if sub_menu1_option == '0':
@@ -69,6 +70,9 @@ if __name__ == '__main__':
             elif sub_menu1_option == '6':
                 showcase_workers(workers)
 
+            elif sub_menu1_option == '7':
+                phar_map(pharmacies)
+
         elif menu_option == '2':
             print('Lista dostępnych leków, i miast gdzie są dostępne wygląda następująco:')
             read_drug(drugs)
@@ -76,7 +80,8 @@ if __name__ == '__main__':
             print('1. Edytuj dane leku')
             print('2. Dodaj nowy lek do listy')
             print('3. Usuń lek z listy')
-            print('4. Sprawdź współrzędne miasta, w którym dostępny jest lek: ')
+            print('4. Sprawdź współrzędne miasta, w którym dostępny jest lek ')
+            print('5. Pokaż dostępność lekarstw na mapie ')
             sub_menu2_option = input('Wybierz dostępną funkcję z menu: ')
 
             if sub_menu2_option == '0':
@@ -88,14 +93,17 @@ if __name__ == '__main__':
 
             elif sub_menu2_option == '2':
                 create_drug(drugs)
-                print('Dodano nową aptekę')
+                print('Dodano ')
 
             elif sub_menu2_option == '3':
                 remove_drug(drugs)
-                print('Usunięto. ')
+                print('Usunięto.')
 
             elif sub_menu2_option == '4':
                 show_drug_coords(drugs)
+
+            elif sub_menu2_option == '5':
+                drug_map(drugs)
 
         elif menu_option == '3':
             print('Lista klientów wygląda następująco:')
@@ -104,7 +112,8 @@ if __name__ == '__main__':
             print('1. Edytuj dane pacjenta')
             print('2. Dodaj nowego pacjenta')
             print('3. Usuń pacjenta z listy')
-            print('4. Sprawdź współrzędne miasta, gdzie przyjmowany jest pacjent: ')
+            print('4. Sprawdź współrzędne miasta, gdzie przyjmowany jest pacjent ')
+            print('5. Pokaż pacjentów na mapie ')
             sub_menu3_option = input('Wybierz dostępną funkcję z menu: ')
 
             if sub_menu3_option == '0':
@@ -116,7 +125,7 @@ if __name__ == '__main__':
 
             elif sub_menu3_option == '2':
                 create_pat(patients)
-                print('Dodano nową aptekę')
+                print('Dodano')
 
             elif sub_menu3_option == '3':
                 remove_pat(patients)
@@ -124,3 +133,8 @@ if __name__ == '__main__':
 
             elif sub_menu3_option == '4':
                 show_pat_coords(patients)
+
+            elif sub_menu3_option == '5':
+                pat_map(patients)
+else:
+    print('Nieprawidłowy wybór. Wybierz ponownie.')
